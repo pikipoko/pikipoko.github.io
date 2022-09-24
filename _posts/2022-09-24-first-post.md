@@ -1,6 +1,6 @@
 ---
 title: "first"
-date: 2022-09-24 1406i
+date: 2022-09-24-1406
 categories: jekyll update
 ---
 
