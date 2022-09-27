@@ -1,23 +1,76 @@
 ---
-title: "W00_WIL"
-date: 25/09/2022
-categories: SWJG TIL WIL pythonFunc Git
+title
 ---
-### 함수
-    def 함수명(매개변수):
-        수행할 문장1
-        수행할 문장2
 
-|함수|입력(매개변수)|출력(결괏값)|설명|
-|---|---|---|---|
-input|(keyboard_input)|str
-int|(str,float)|int
-map|(f,iterable)|f(iterable),|입력받은 자료형의 각 요소를 함수 f가 수행한 결과를 묶어서 돌려주는 함수. 즉, 함수 f에 따른 출력들을 묶어서 반환
-list|(iterable)|list 자료형
-abs|(int)|절댓값
+## git
 
-<!-- ### 로그인 작동 원리 -->
-map(func, *iterables) --> map object
+|||
+|---|---|
+git branch --set-upstream-to origin/main|깃 홈페이지랑 로컬에서 만든 브랜치랑 연결 명령어
+
+
+---
+사장
+1. 깃헙 페이지에서 리포지토리 생성 (main)
+2. ex) vs code로 app.py 작업파일생성 푸쉬해서 리포지토리에 업로드 까지완료
+
+---
+신입
+1. 사장의 리포지토리안에 내용을 복사
+git clone (사장 url)
+2. 신입의 브랜치생성 
+3. 사장 파일을 수정 작성 
+4. 업데이트를 하는데 master에 하면 좆댐 / 신입의 브랜치에 업로드 
+5. 신입 깃헙페이지에 가면 풀 리퀘스트 도착
+6. 확인 후 편지써서 사장한테 보고
+
+---
+사장
+1. 신입의 풀 리퀘스트 도착
+2. 코드 확인 (오류나 수정사장 코드 다보임)
+3. 이상없으면 승낙
+4. master 즉 우리 회사의 완성품이 수정 완료됨
+---
+
+if 사장이 master 완성품에 변화가 생겼는데 그 도중 코드 수정을 하고 있었다면!
+
+1. git add (해당파일)
+2. git commit -m "comment"
+3. 절대 푸쉬 하면 안됨
+4. master 완성품의 pull 먼저 >> 사장이 수정중이던 코드에 완성품 코드가 복사대체가 아닌 추가가 됨
+5. 이후에 사장이 코드 수정 및 완료하면 push
+---
+
+1. 깃 ~ 프로그램 연결
+코드복제
+git clone https://github.com/Gi-Youn-Oh/project1.git
+
+2. 폴더이동 명령어
+cd project1 ( 깃허브 리포지터리 이름)
+cd .. 상위폴더 이동
+cd ~ home 폴더
+
+3. 코드 가져오기 (새로운 협업자가 클론 후 코드 받을때 / 보통자동으로 가져와짐)
+code .
+
+4. 파일 추가 명령어
+git add . (전체)
+git add index.html (index.html 만 전송)
+
+5. 커밋하기
+git commit -m "first commit"
+
+6. 푸쉬하기
+git push origin 브랜치명 / * master는 완성품
+
+7. 브랜치 생성
+git checkout -b (브랜치명)
+
+8. 브랜치로 이동
+git checkout (브랜치명)
+
+9. 풀 하기
+git pull origin master
 
 
 [git-scm](git-scm.com)
@@ -64,5 +117,3 @@ git log --oneline|commit 로그를 한줄로(맨 위가 젤 최신 commit messag
 git reset --hard <COMMIT_ID>|해당 <COMMIT_ID>의 커밋 reset? 확실하지 않음. 참고 링크 확인 필요.
 
 [git reset, revert, amend 참고](https://www.lainyzine.com/ko/article/git-reset-and-git-revert-and-git-commit-amend/)
-
-prettier(format document) - extension - 자동으로 포매팅 해줌
