@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jung Jae Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **Software Engineer**."
+  bio              : ""
   location         : "SWJG"
   email            : "wognsddd777@gmail.com"
   links:
