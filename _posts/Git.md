@@ -1,12 +1,54 @@
 ---
-title
+title: "Git"
+date: 27/09/2022
+categories: Git git
 ---
+[git-scm](git-scm.com)
+### Git (코딩 알려주는 누나, visual studio 사용자를 위한 git)
+    github
+        - 코딩 외에 실무적인 문제를 해결해 줌
+        - 소스코드를 올리는 어떤 공간   
 
-## git
+    git
+        - 소스코드를 내 컴퓨터에서 인터넷으로 올려주는 역할   
 
-|||
+    main(master) 
+        최종 프로젝트 결과물이 있는 작업 영역
+    
+    branch
+        - [브랜치란](https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html)
+        - 개발자들마다 독립적으로 작업을 진행하기 위한, 독립적인 작업 영역
+
+[main? master?](https://velog.io/@gwsyl22/git-Github-branch-%EC%9D%B4%EB%A6%84-main%EC%9D%98-%EC%A0%95%EC%B2%B4%EB%8A%94)
+
+
+|명령어|정리|
 |---|---|
+깃 처음 깔고||
+git config --global user.name "이름"|이름 입력
+git config --global user.email "이메일 주소"|github 이메일 입력
+git config --list|이름, 이메일 잘 들어갔는지 확인
+처음 commit할 때||
+git init|맨 처음에 프로젝트를 올릴 때 해줘야 함
+git add {파일명}|. - (전부다) 깃허브에 올리겠다. 파일명 - 해당 파일만 올릴 예정이다.
+git status|현재 어떤 상황인지 보여줌
+git commit -m "first commit"|"first commit" 이라는 메세지를 올릴 파일과 함께 히스토리로 등록하겠다.
+git remote add origin {깃허브에 만들어져 있는 repository 주소}|적혀있는 repository로 내 소스 코드를 보낸다.
+git remote|어디에 연결되어 있는지 확인, -v : 단축이름과 URL 표시
+git push origin main|Github로 올리기 - 아까 commit한 게("first commit"이라는 히스토리랑 add한 파일들) git repository로 올라감
+git config --global core.autocrlf true|[error : LF will be replaced by CRLF in README.md.](https://wotres.tistory.com/entry/git-warning-LF-will-be-replaced-by-CRLF-in-READMEmd) 에러 메세지 해결 명령어
+git clone {가져올 github repository 주소} {폴더이름}| 폴더이름은 선택사항, 폴더이름이 있는 경우 - 해당폴더이름의 폴더를 생성 후 그 안에 코드들 다운로드, 없는 경우 - github project 이름으로 폴더 생성 후 그 안에 코드들 다운로드
+git clone -b {branch명} --single-branch {가져올 github repository 주소}|github repository의 특정 branch에 있는 파일들을 내려받는다
+git checkout -b {branch명}|branch 생성? 체크아웃? 조금 애매함
+git reset|commit 취소하기
+git revert|commit 내용 되돌리기
+git commit -amend|commit 덮어쓰기
+git log --oneline|commit 로그를 한줄로(맨 위가 젤 최신 commit message)
+git reset --hard <COMMIT_ID>|해당 <COMMIT_ID>의 커밋 reset. [링크](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0)
 git branch --set-upstream-to origin/main|깃 홈페이지랑 로컬에서 만든 브랜치랑 연결 명령어
+git rebase -i <COMMIT_ID>|<COMMIT_ID>에 해당하는 commit을 제거. 근데 이거 치고 pick > drop으로 바꿔줘야됨.
+
+[git reset, revert, amend 참고](https://www.lainyzine.com/ko/article/git-reset-and-git-revert-and-git-commit-amend/)
 
 
 ---
@@ -71,49 +113,3 @@ git checkout (브랜치명)
 
 9. 풀 하기
 git pull origin master
-
-
-[git-scm](git-scm.com)
-### 깃 (코딩 알려주는 누나, visual studio 사용자를 위한 git)
-    github
-        - 코딩 외에 실무적인 문제를 해결해 줌
-        - 소스코드를 올리는 어떤 공간   
-
-    git
-        - 소스코드를 내 컴퓨터에서 인터넷으로 올려주는 역할   
-
-    main(master)
-        최종 프로젝트 결과물이 있는 작업 영역
-    
-    branch
-        - [브랜치란](https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html)
-        - 개발자들마다 독립적으로 작업을 진행하기 위한, 독립적인 작업 영역
-    
-
-#### 처음에 Git을 깔고 개인설정      
-
-|||
-|---|---|
-깃 처음 깔고||
-git config --global user.name "이름"|이름 입력
-git config --global user.email "이메일 주소"|github 이메일 입력
-git config --list|이름, 이메일 잘 들어갔는지 확인
-처음 commit할 때||
-git init|맨 처음에 프로젝트를 올릴 때 해줘야 함
-git add {파일명}|. - (전부다) 깃허브에 올리겠다. 파일명 - 해당 파일만 올릴 예정이다.
-git status|현재 어떤 상황인지 보여줌
-git commit -m "first commit"|"first commit" 이라는 메세지를 올릴 파일과 함께 히스토리로 등록하겠다.
-git remote add origin {깃허브에 만들어져 있는 repository 주소}|적혀있는 repository로 내 소스 코드를 보낸다.
-git remote|어디에 연결되어 있는지 확인, -v : 단축이름과 URL 표시
-git push origin main|Github로 올리기 - 아까 commit한 게("first commit"이라는 히스토리랑 add한 파일들) git repository로 올라감
-git config --global core.autocrlf true|[error : LF will be replaced by CRLF in README.md.](https://wotres.tistory.com/entry/git-warning-LF-will-be-replaced-by-CRLF-in-READMEmd) 에러 메세지 해결 명령어
-git clone {가져올 github repository 주소} {폴더이름}| 폴더이름은 선택사항, 폴더이름이 있는 경우 - 해당폴더이름의 폴더를 생성 후 그 안에 코드들 다운로드, 없는 경우 - github project 이름으로 폴더 생성 후 그 안에 코드들 다운로드
-git clone -b {branch명} --single-branch {가져올 github repository 주소}|github repository의 특정 branch에 있는 파일들을 내려받는다
-git checkout -b {branch명}|branch 생성? 체크아웃? 조금 애매함
-git reset|commit 취소하기
-git revert|commit 내용 되돌리기
-git commit -amend|commit 덮어쓰기
-git log --oneline|commit 로그를 한줄로(맨 위가 젤 최신 commit message)
-git reset --hard <COMMIT_ID>|해당 <COMMIT_ID>의 커밋 reset? 확실하지 않음. 참고 링크 확인 필요.
-
-[git reset, revert, amend 참고](https://www.lainyzine.com/ko/article/git-reset-and-git-revert-and-git-commit-amend/)
