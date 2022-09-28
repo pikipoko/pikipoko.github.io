@@ -108,9 +108,9 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "SWJG"
-  email            : "wognsddd777@gmail.com"
+  email            : # "wognsddd777@gmail.com"
   links:
-    - label: "Email"
+    - label: "wognsddd777@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "wognsddd777@gmail.com"
     # - label: "Website"
