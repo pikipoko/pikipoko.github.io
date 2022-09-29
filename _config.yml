@@ -107,7 +107,7 @@ author:
   name             : "Jung Jae Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : "SWJG"
+  location         : ""
   email            : # "wognsddd777@gmail.com"
   links:
     - label: "wognsddd777@gmail.com"
@@ -124,7 +124,7 @@ author:
     #   # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/pikipoko"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
