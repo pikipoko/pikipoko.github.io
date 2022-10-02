@@ -8,7 +8,6 @@ categories: SWJG TIL
 - 잠 오면 조금 걷다 오기
 - 하루에 할 양을 정해두고 공부하기.
 
-
 ### 마크다운 문법
 
 - toggle list
@@ -21,7 +20,7 @@ categories: SWJG TIL
     <details>
     <summary> 여기를 눌러주세요</summary>
     <div markdown='1'>
-        숨겨진 내용
+        지금 보고 있는 코드가 들어간 곳
     </div>
     </details>
 </div>
