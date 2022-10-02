@@ -8,7 +8,7 @@ categories: SWJG TIL
 - 잠 오면 조금 걷다 오기
 - 하루에 할 양을 정해두고 공부하기.
 
-### 마크다운 문
+### Github Pages - html in md
 
 - toggle list
 <hr/>
@@ -27,7 +27,10 @@ categories: SWJG TIL
 </details>
 <hr/>
 
-    
+### git minimal-mistakes theme - right-sidebar-width
+
+- [본문 영역 및 글자 크기](https://eona1301.github.io/github_blog/GithubBlog-Content-Width/)
+<hr/>
 
 ### 퀵 정렬
 
