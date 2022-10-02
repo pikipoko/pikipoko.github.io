@@ -8,7 +8,7 @@ categories: SWJG TIL
 - 잠 오면 조금 걷다 오기
 - 하루에 할 양을 정해두고 공부하기.
 
-### 마크다운 문법
+### 마크다운 문
 
 - toggle list
 <hr/>
