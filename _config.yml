@@ -107,7 +107,7 @@ author:
   name             : "Jung Jae Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : ""
+  location         : # ""
   email            : # "wognsddd777@gmail.com"
   links:
     - label: "wognsddd777@gmail.com"
