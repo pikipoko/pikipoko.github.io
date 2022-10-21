@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "PIKIPOKO"
+title                    : "Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "정재훈 Jung Jae Hun"
+name                     : "Jung Jae Hun"
 description              : "A website."
 url                      : "https://pikipoko.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jung Jae Hun"
+  name             : "JJH"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : # ""
@@ -290,4 +290,3 @@ defaults:
       comments: # true
       share: true
       related: true
-  
