@@ -14,9 +14,11 @@
 @import "minimal-mistakes/vendor/susy/susy";
 @import "minimal-mistakes/mixins";
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
 @font-face {
-    font-family: 'IBMPlexSansKR-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-family: 'IBM Plex Sans KR';
+    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
     font-weight: normal;
     font-style: normal;
 }
